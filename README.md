@@ -1,4 +1,5 @@
 **Data-Driven Inventory Optimization**
+
 This project aims to optimize inventory levels using predictive analytics. By analyzing historical sales and inventory data, we develop a predictive model to forecast future inventory needs, thereby reducing holding costs and improving supply chain efficiency.
 
 **Table of Contents**
@@ -10,9 +11,11 @@ This project aims to optimize inventory levels using predictive analytics. By an
 - Conclusion
 
 **Introduction**
+
 Inventory management is a critical aspect of supply chain operations. Efficient inventory management ensures that products are available to meet customer demand without overstocking, which can lead to increased holding costs. This project uses historical inventory data to develop a predictive model for optimizing inventory levels.
 
 **DATA DESCRIPTION**
+
 The dataset used in this project is the Online Retail dataset, which contains transactional data for a UK-based online retail store from December 2010 to December 2011. The data includes the following columns:
 - InvoiceNo: Invoice number (unique for each transaction)
 - StockCode: Product code
@@ -40,10 +43,13 @@ The dataset used in this project is the Online Retail dataset, which contains tr
 - Generate forecasts for the next 12 months.
 
 **ARIMA**
+
 **What is ARIMA?**
+
 ARIMA stands for AutoRegressive Integrated Moving Average. It is a class of models that explains a given time series based on its own past values, its own past errors (moving averages), and a differencing term to make the series stationary. ARIMA models are widely used for forecasting and are suitable for univariate time series data.
 
 **Why ARIMA?**
+
 ARIMA was chosen for this project due to the following reasons:
 
 **Handling of Temporal Dependencies:**
@@ -67,7 +73,9 @@ ARIMA was chosen for this project due to the following reasons:
 - Provide confidence intervals for the forecasts.
 
 **RESULTS**
+
 The ARIMA model was trained on the historical inventory data and used to forecast inventory levels for the next 12 months. The forecasted values, along with the observed data, are plotted to visualize the trends and future predictions. The model provides a reliable forecast with confidence intervals to aid in decision-making for inventory management.
 
 **CONCLUSION**
+
 The predictive model developed in this project helps optimize inventory levels by forecasting future needs based on historical data. This approach can significantly reduce holding costs and improve supply chain efficiency. The methodology and results demonstrate the effectiveness of data-driven decision-making in inventory management.
