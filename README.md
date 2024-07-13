@@ -54,8 +54,10 @@ ARIMA was chosen for this project due to the following reasons:
 
 **Handling of Temporal Dependencies:**
 - ARIMA models are effective in capturing the temporal dependencies in the time series data, which is crucial for accurate forecasting of inventory levels.
+
 **Stationarity Adjustment:**
 - The 'Integrated' part of ARIMA handles non-stationarity in the data by applying differencing, which is essential for modelling real-world time series data that often exhibit trends and seasonality.
+
 **Flexibility:**
 - ARIMA models can accommodate various types of time series patterns through its parameters:
     p: The number of lag observations included in the model (autoregressive part).
@@ -63,10 +65,18 @@ ARIMA was chosen for this project due to the following reasons:
     q: The size of the moving average window (moving average part).
   
 **Model Implementation:**
-**Data Preparation:** The data is preprocessed to ensure stationary by using the Augmented Dickey-Fuller test and applying differencing if necessary.
-**Parameter Selection:** The ARIMA model parameters are selected based on the characteristics of the time series data.
-**Model Training:** The ARIMA model is trained on the historical data to learn the underlying patterns and trends.
-**Forecasting:** The trained model forecasts future inventory levels, providing insights into future stock needs.
+
+**Data Preparation:** 
+- The data is preprocessed to ensure stationary by using the Augmented Dickey-Fuller test and applying differencing if necessary.
+
+**Parameter Selection:** 
+- The ARIMA model parameters are selected based on the characteristics of the time series data.
+
+**Model Training:** 
+- The ARIMA model is trained on the historical data to learn the underlying patterns and trends.
+
+**Forecasting:** 
+- The trained model forecasts future inventory levels, providing insights into future stock needs.
 
 **Results Visualization:**
 - Plot the observed and forecasted inventory levels.
